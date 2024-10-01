@@ -1,0 +1,4 @@
+- Data Types
+- Variables
+- Strings
+- Conditionals
