@@ -1,4 +1,4 @@
-- Data Types
+- Data Types:  Numbers(int, float, complex), strings, booleans(True or False), list, set, tuple, dictionary
 - Variables
 - Strings
 - Conditionals
