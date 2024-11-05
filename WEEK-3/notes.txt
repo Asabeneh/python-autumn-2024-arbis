@@ -1,5 +1,4 @@
-Strings
-
-List 
 
 Loops
+Set, Tuple, Dictionary
+Functions
