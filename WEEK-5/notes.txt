@@ -1,9 +1,0 @@
-
-
-Set
-Tuple
-modules
-lambda Functions
-Higher order Functions
-Functional programming
-List comprehension
