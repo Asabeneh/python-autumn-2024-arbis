@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} {% block content %}
+
+<h2>Blogs Application</h2>
+<a href="{{url_for('add_blog')}}">Add Blog</a>
+<div class="blogs">
+    {% for blog in data %}
+    <div class="blog">
+        <h2>
+            <a href="{{url_for('blog_details', id = blog.id)}}">{{blog.title}}</a>
+        </h2>
+        <p>{{blog.content[:150]}} ...</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

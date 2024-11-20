@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li class="nav-list"><a class="nav-list-link" href="/">Home</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="/about">About</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="/contact">Contact</a></li>
+        <li class="nav-list"><a class="nav-list-link" href="/blogs">Blogs</a></li>
+      </ul>
+    </header>
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <footer>
+      <p>Copyright &copy; 2024 | Asabeneh Yetayeh</p>
+    </footer>
+  </body>
+</html>

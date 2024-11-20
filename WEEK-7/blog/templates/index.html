@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} {% block content %}
+<div>
+  Year: {{ year }} <br />
+  First name: {{ first_name }} <br />
+  Age: {{ age }}
+  <ul>
+    {% for name in names %}
+
+    <li>{{name}}</li>
+
+    {% endfor %}
+  </ul>
+  <div style="text-align: center; border: 2px solid blue">
+    <h1>Flask and MySQL Blog</h1>
+    
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo excepturi
+      ipsa provident hic itaque deserunt beatae. Odit provident, reprehenderit,
+      asperiores quam dolorem enim culpa, non sit dolorum exercitationem soluta
+      corporis.
+    </p>
+  </div>
+</div>
+{% endblock %}

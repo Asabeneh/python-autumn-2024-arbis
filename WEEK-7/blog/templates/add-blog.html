@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} {% block content %}
+
+<h2>Add Blog</h2>
+<form class="add-blog" action="{{url_for('add_blog')}}" method="POST">
+  <div class="form-group">
+    <input type="text" id="title" name="title" placeholder="Title" />
+  </div>
+  <div class="form-group">
+    <input type="text" id="subtitle" name="subtitle" placeholder="Sub title" />
+  </div>
+  <div class="form-group">
+    <select name="category" id="category">
+        {% for category in categories %}
+        <option value="{{category}}">{{ category }}</option>
+        {% endfor %}
+      
+
+    </select>
+  </div>
+  <div class="form-group">
+    <textarea name="content" id="content" rows = '10' placeholder="Write your blog here . . ."></textarea>
+  </div>
+  <div class="form-group">
+    <textarea name="tags" id="tags" rows = '2' placeholder="Tags separated by comma"></textarea>
+  </div>
+  <div class="form-group">
+    <input type="file" id="cover_img" name="cover_img" />
+  </div>
+  <div class="form-group">
+    <button>Add Blog</button>
+  </div>
+</form>
+
+{% endblock %}

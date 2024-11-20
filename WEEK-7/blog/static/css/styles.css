@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(249, 244, 244);
+}
+
+header,
+main,
+footer {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list{
+  list-style: none;
+}
+
+.nav-list-link {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 600;
+}
+
+.blog {
+    border: 2px solid gray;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.add-blog {
+
+}
+.form-group {
+    margin:10px auto;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 2px solid rgb(237, 243, 237);
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid rgb(227, 199, 233);
+}
+
+textarea {
+    resize: vertical;
+}
